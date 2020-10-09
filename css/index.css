@@ -125,6 +125,7 @@ button:hover{
     justify-content: space-around;
     width:80%;
     margin:0 auto;
+    border: red solid 1px;
 }
 
 .artist{
@@ -133,6 +134,10 @@ button:hover{
 }
 .artist img{
     width:100%;
+}
+
+.bio{
+    border: blue 1px solid;
 }
 
 @media(max-width: 500px){
@@ -163,8 +168,11 @@ button:hover{
         /* border: red solid 1px; */
     }
     .artist {
+        display: flex;
+        flex-flow: column;
         border: solid 1px yellow;
-        margin: 0 ;
+        margin: 0;
+        width: 80%;
     }
     .artist a {
         font-size: 0.8em;
@@ -172,12 +180,16 @@ button:hover{
     
     .artist img {
         height: 20vh;
+        width: 60%
     }
     .artist div {
         display: flex;
         flex-flow: column nowrap;
         width: 90%;
         font-size: 0.5em;
+    }
+    .bio{
+        width: 100px;
     }
 }
 
